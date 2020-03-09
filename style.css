@@ -1,0 +1,60 @@
+body {
+    background-image: url(brown-wheat-plant-2506831.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.5;
+}
+
+header {
+    background-color: #464646;
+    color: white;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: 'Sen', sans-serif;
+    margin: 0px;
+    align-items: center;
+    transition: .5s ease;
+    -webkit-animation: fadein 3s ;
+  
+}
+@keyframes fadein {
+    from { opacity: -5; }
+    to   { opacity: 10; }
+}
+
+main {
+    font-family: 'Sen' , sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: fadein 3s;
+    height: 100%;
+}
+
+@keyframes fadein {
+    from { opacity: -5; }
+    to   { opacity: 10; }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.nav_balk:hover {
+    opacity: 0.5;
+    cursor: 1;
+}
+
+#intro_tekst {
+    width: 400px;
+}
