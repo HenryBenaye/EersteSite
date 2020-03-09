@@ -17,7 +17,7 @@ header {
     margin: 0px;
     align-items: center;
     transition: .5s ease;
-    -webkit-animation: fadein 3s ;
+    -webkit-animation: fadein 4s ;
   
 }
 @keyframes fadein {
