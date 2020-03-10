@@ -1,6 +1,6 @@
 body {
     background-image: url(GettyImages-883265372v4.gif);
-    background-repeat: no-repeat;
+    background-repeat: 1x;
     background-size: 100%;
     opacity: 1;
     height: 100%;
@@ -155,7 +155,9 @@ h2 {
 #basket_img {
     width: 500px;
     height: 500px;
+    margin-bottom: 20px;
 }
+
 
 #txt_3 {
     width: 800px;
@@ -173,7 +175,6 @@ footer {
     align-items: center;
     -webkit-animation: fadein 3s;
     height: 100%;
-    background-color: black;
 }
 
 
