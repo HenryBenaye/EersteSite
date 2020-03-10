@@ -67,21 +67,113 @@ button {
     border: none;
     cursor:pointer;
     overflow: hidden;   
+    margin-left: 30px;
+    margin-right: 30px;
     
  
 
      
 }
 
-#allinone{
+.slideshow {
     display: flex;
-    flex-direction: row;
- 
+    justify-content: center;
+    align-items: center;
 }
 
-#allinone , button {
-    margin-bottom: 100px;
+footer {
+    height: 30px;
+}
 
+#intro_overMij {
+    width: 400px;
+
+}
+
+#voetbal {
+    width: 1800px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+
+#voetbalimg {
+    width: 450px;
+    height: 450px;
+}
+
+h2 {
+    margin: 20px;
+}
+
+#voetbal_text {
+    width: 550px;
+}
+
+#txt_ballie {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gif_game {
+    width: 400px;
+    height: 400px;
+}
+
+#games {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+#game_txt {
+    width: 550px;
+}
+
+#txt_2 {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+#bskt {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#bskt_txt {
+    width: 550px;
+    margin-left: 200px;
+}
+
+#basket_img {
+    width: 500px;
+    height: 500px;
+}
+
+#txt_3 {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    font-family: 'Sen' , sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: fadein 3s;
+    height: 100%;
+    background-color: black;
 }
 
 
