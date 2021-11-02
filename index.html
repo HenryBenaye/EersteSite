@@ -4,35 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eerste Website</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/tailwindcss/dist/tailwind.css">
 </head>
 <body>
     <header>
-        <a href="index.html">Home</a>
-        <a href="Over_Mij.html">Over Mij</a>
-        <a href="Projecten.html">Projecten</a>
-        <a href="Vaardigheden.html">vaardigheden</a>
-        <a href="Vaardigheden.html">Github</a>
+        <ul class="flex">
+            <li class="flex-1 mr-2">
+                <a class="text-center block border border-white rounded hover:border-gray-200 text-red-500 hover:bg-gray-200 py-2 px-4" href="index.html">Home</a>
+            </li>
+            <li class="flex-1 mr-2">
+                <a class="text-center block border border-white rounded hover:border-gray-200 text-red-500 hover:bg-gray-200 py-2 px-4" href="Over_Mij.html">Over Mij</a>
+            </li>
+            <li class="flex-1 mr-2">
+                <a class="text-center block border border-white rounded hover:border-gray-200 text-red-500 hover:bg-gray-200 py-2 px-4" href="Projecten.html">Projecten</a>
+            </li>
+            <li class="flex-1 mr-2">
+                <a class="text-center block border border-white rounded hover:border-gray-200 text-red-500 hover:bg-gray-200 py-2 px-4" href="Vaardigheden.html">Vaardigheden</a>
+            </li>
+            <li class="flex-1 mr-2">
+                <a class="text-center block border border-white rounded hover:border-gray-200 text-red-500 hover:bg-gray-200 py-2 px-4" href="https://github.com/HenryBenaye">Github</a>
+            </li>
+
+        </ul>
         
     </header>
     <main>
-        <h1>Welkom</h1>
-        <p id="intro_tekst">Hallo ik ben Henry Benaye en welkom op mijn website. 
-        <p> Op mijn site zal je informatie over mij vinden.</p> 
-        <p> En zal je zien welke projecten ik allemaal heb gemaakt en mijn vaardigheden.</p>
-        <div class="slideshow">
- 
-            <button onclick="vorige_foto()">❮</button>
-            <img src="foto.jpg"  id="foto_1">
-            <img src="fotozaka.jpg" style="display: none;" id="foto_2">
-            <img src="fotofais.jpg" style="display: none;" id="foto_3">
-            <button onclick="volgende_foto()">❯</button>
+
+        <h1 class="text-8xl my-8 grid justify-items-center text-red-500">Welkom</h1>
+        <div>
+            <span class="grid justify-items-center text-red-500 text-base	">
+                 Hallo ik ben Henry Benaye en welkom op mijn website.<br>
+                 Op mijn site zal je informatie over mij vinden.<br>
+                En zal je zien welke projecten ik allemaal heb gemaakt en mijn vaardigheden.
+            </span><br>
+        </div>
+        <div class="grid justify-items-center text-red-500">
+            <img src="BIT_Q1_P-9471.jpg" class="h-5/6 w-2/5 rounded-lg shadow-2xl" id="mainPhoto">
         </div>
     </main>
     <footer>
 
     </footer>
-    
+    <script>
+        let images = ['BIT_Q1_P-9471.jpg','fotofais.jpg', 'fotozaka.jpg', 'foto.jpg'];
+
+        let index = 0;
+        const imgElement = document.querySelector('#mainPhoto');
+
+        function change() {
+            imgElement.src = images[index];
+            index > 1 ? index = 0 : index++;
+        }
+
+        window.onload = function () {
+            setInterval(change, 5000);
+        };
+    </script>
+
 </body>
 </html>
